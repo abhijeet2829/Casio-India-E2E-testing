@@ -32,9 +32,3 @@ The project targets a live external website, so selectors, browser setup and sit
 - Page objects and tests for product details, contact and footer areas.
 - Manual test plan, scenarios, cases, bug report, mind map and summary report in [Manual testing deliverables](./Manual%20testing%20deliverables/).
 
-## Test evidence and limitations
-
-Test code is under [src/test](./src/test/java/com/pom/tests/) and page objects under [src/main](./src/main/java/com/pom/Pages/). The checked-in `target/surefire-reports` files are historical, not evidence of a current passing suite; one saved May 2025 report records a failed test. The suite has not been rerun as part of this documentation update.
-
-This is a learning project, not an official Casio product or production automation framework.
-
