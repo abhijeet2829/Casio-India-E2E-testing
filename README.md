@@ -14,7 +14,7 @@ Java, Selenium WebDriver, TestNG and Maven. The Maven configuration targets Java
 
 ## Setup and execution
 
-1. Install a compatible JDK, Maven and a browser supported by the project's WebDriver configuration.
+1. Install a compatible JDK, Maven and Google Chrome. The included homepage test uses ChromeDriver; browser and driver compatibility may need adjustment.
 2. Clone the repository and enter its directory:
 
    ```bash
