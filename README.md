@@ -1,67 +1,37 @@
-# Casio India E2E Testing
+# Casio India UI Testing
 
-Welcome to the **Casio India E2E Testing** repository! This project is designed for end-to-end testing of the Casio India website, ensuring that all user flows work seamlessly.
-<br>
+A software-testing coursework project exploring the Casio India website with manual testing artifacts and Selenium UI automation. The repository contains page-object classes and TestNG tests for several website areas.
 
-## 📝 Description
+## Scope
 
-This repository contains the automated end-to-end tests for Casio India, focusing on the following areas:
-- Homepage navigation
-- Product search and filtering
-- Product details and wishlist
-- Cart
-- Checkout
-- Contact Us
-- Footer section
+- Homepage navigation, search and product/category visibility.
+- Page objects and tests for product details, contact and footer areas.
+- Manual test plan, scenarios, cases, bug report, mind map and summary report in [Manual testing deliverables](./Manual%20testing%20deliverables/).
 
-The goal is to ensure that all critical user journeys are thoroughly tested.
-<br>
+## Technology
 
-## ⚙️ Installation
+Java, Selenium WebDriver, TestNG and Maven. The Maven configuration targets Java 8 and declares Selenium 4.24.0 and TestNG 7.1.0.
 
-To get started, clone this repository to your local machine:
+## Setup and execution
 
-```bash
-git@github.com:aryan6845/Casio-India-E2E-testing.git
-```
-<br>
+1. Install a compatible JDK, Maven and a browser supported by the project's WebDriver configuration.
+2. Clone the repository and enter its directory:
 
-### Prerequisites
+   ```bash
+   git clone https://github.com/abhijeet2829/Casio-India-E2E-testing.git
+   cd Casio-India-E2E-testing
+   ```
 
-- **Selenium**: Make sure Selenium is installed on your machine.
-- **TestNG**: TestNG is required to group test cases.
-<br>
+3. Inspect `testng.xml` and the test classes for their target URLs and browser setup, then run:
 
-## 🚀 Usage
+   ```bash
+   mvn test
+   ```
 
-To run the tests, execute the following command:
+The project targets a live external website, so selectors, browser setup and site changes can affect execution.
 
-```bash
-mvn - q test
-```
+## Test evidence and limitations
 
-The tests will run using the selected testing framework (i.e. selenium) and generate a detailed report.
-<br>
+Test code is under [src/test](./src/test/java/com/pom/tests/) and page objects under [src/main](./src/main/java/com/pom/Pages/). The checked-in `target/surefire-reports` files are historical, not evidence of a current passing suite; one saved May 2025 report records a failed test. The suite has not been rerun as part of this documentation update.
 
-## 🧑‍💻 Contributing
-
-We welcome contributions! If you'd like to help improve this project, feel free to fork the repo and submit a pull request with your changes.
-<br>
-
-### Steps to Contribute:
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature-branch`
-3. Commit your changes: `git commit -m 'Add feature'`
-4. Push to your forked repository: `git push origin feature-branch`
-5. Open a pull request!
-<br>
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-<br>
-
-## 📄 Acknowledgments
-
-- [Casio India](https://www.casio.com/in/) for providing the platform we are testing.
-- [Selenium](https://www.selenium.dev) for their excellent browser automation tools.
+This is a learning project, not an official Casio product or production automation framework.
